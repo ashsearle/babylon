@@ -57,10 +57,10 @@
               "column": 16
             }
           },
-          "value": "Hello\\122World",
+          "value": "HelloRWorld",
           "extra": {
             "raw": "\"Hello\\122World\"",
-            "rawValue": "Hello\\122World"
+            "rawValue": "HelloRWorld"
           }
         }
       }

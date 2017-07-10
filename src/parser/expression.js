@@ -1419,7 +1419,10 @@ export default class ExpressionParser extends LValParser {
   ): boolean {
     if (!isExpression && node.body.directives.length) {
       for (const directive of node.body.directives) {
-        if (directive.value.value === "use strict") {
+        if (
+          directive.value.extra.raw === "'use strict'" ||
+          directive.value.extra.raw === '"use strict"'
+        ) {
           return true;
         }
       }

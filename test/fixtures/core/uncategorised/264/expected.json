@@ -155,10 +155,10 @@
               "column": 15
             }
           },
-          "value": "use\\x20strict",
+          "value": "use strict",
           "extra": {
             "raw": "\"use\\x20strict\"",
-            "rawValue": "use\\x20strict"
+            "rawValue": "use strict"
           }
         }
       }

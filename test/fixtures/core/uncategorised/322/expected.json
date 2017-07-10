@@ -57,10 +57,10 @@
               "column": 10
             }
           },
-          "value": "a\\u0026b",
+          "value": "a\u0026b",
           "extra": {
             "raw": "'a\\u0026b'",
-            "rawValue": "a\\u0026b"
+            "rawValue": "a\u0026b"
           }
         }
       }

@@ -45,7 +45,7 @@ export default class StatementParser extends ExpressionParser {
     const directive = this.startNodeAt(stmt.start, stmt.loc.start);
 
     const raw = this.input.slice(expr.start, expr.end);
-    const val = (directiveLiteral.value = raw.slice(1, -1)); // remove quotes
+    const val = (directiveLiteral.value = expr.value);
 
     this.addExtra(directiveLiteral, "raw", raw);
     this.addExtra(directiveLiteral, "rawValue", val);
@@ -645,7 +645,11 @@ export default class StatementParser extends ExpressionParser {
         const directive = this.stmtToDirective(stmt);
         directives.push(directive);
 
-        if (oldStrict === undefined && directive.value.value === "use strict") {
+        if (
+          oldStrict === undefined &&
+          (directive.value.extra.raw === "'use strict'" ||
+            directive.value.extra.raw === '"use strict"')
+        ) {
           oldStrict = this.state.strict;
           this.setStrict(true);
 

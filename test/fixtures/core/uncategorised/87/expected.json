@@ -57,10 +57,10 @@
               "column": 8
             }
           },
-          "value": "\\u0061",
+          "value": "\u0061",
           "extra": {
             "raw": "\"\\u0061\"",
-            "rawValue": "\\u0061"
+            "rawValue": "\u0061"
           }
         }
       }

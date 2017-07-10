@@ -167,10 +167,10 @@
                         "column": 28
                       }
                     },
-                    "value": "use\\nstrict",
+                    "value": "use\nstrict",
                     "extra": {
                       "raw": "'use\\nstrict'",
-                      "rawValue": "use\\nstrict"
+                      "rawValue": "use\nstrict"
                     }
                   }
                 }
